@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+
+    <h1> RESULTS </h1>
+    <h3> You should visit <%= @option[0] %> or <%= @option[1]%></h3>
+
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=<%= @option[0] %>
+      &zoom=17
+      &key=AIzaSyDOkLXZ5Ji73KxYhtpOMSsXctr0Idrph68"
+      width = "500px"
+      height = "500px">
+    </iframe>
+
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=<%= @option[1] %>
+      &zoom=17
+      &key=AIzaSyDOkLXZ5Ji73KxYhtpOMSsXctr0Idrph68"
+      width = "500px"
+      height = "500px">
+    </iframe>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
