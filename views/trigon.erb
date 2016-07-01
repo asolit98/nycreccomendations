@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+		<meta charset="UTF-8">
+    <title>Abby's New York Guide</title>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/trigon_style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee+Shade|Candal|Hind+Vadodara|Merriweather|Rubik+One|Yanone+Kaffeesatz" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrap_the_wrapper2" style="height: 500px;">
+      <div class="wrapper2">
+        <header>
+          <h1>Abby's New York Guide</h1>
+          <h3>Where are you?</h3>
+        </header>
+        <form method="POST" action="/activity">
+          <select class="dropdown-menus form-control" name="neighborhood">
+            <option value="neighborhood">Neighborhood</option>
+            <option value="west_village">The West Village</option>
+            <option value="lower_east_side">The Lower East Side</option>
+            <option value="harlem">Harlem</option>
+            <option value="midtown">Midtown</option>
+            <option value="tribeca">Tribeca</option>
+            <option value="upper_east_side">The Upper East Side</option>
+            <option value="upper_west_side">The Upper West Side</option>
+          </select>
+
+          <h3> What activity would you like to do? </h3>
+
+          <select class="dropdown-menus form-control" name="activity">
+            <option value="activity">Activity</option>
+            <option value="food">Eat</option>
+            <option value="parks">Go to a Park</option>
+            <option value="museums"> Visit a Museum</option>
+            <option value="movies">See a Movie</option>
+          </select>
+        <div>
+          <input id="final-button-stuff" class="btn btn-primary" type="submit" value="Submit">
+        </div>
+      </form>
+      </div>
+    </div>
+  </body>
+
+</html>

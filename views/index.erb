@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Abby's Cool Ass Thing</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-</head>
+  <head>
+    <title>Abby's Cool Ass Thing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+  </head>
 
-<body>
-  <div class="container">
-    <div class="jumbotron">
-  <h1> ABBY'S GUIDE TO NEW YORK CITY </h1>
+  <body>
 
 
-  <h2> Where are you? </h2>
-
-  <form method="POST" action="/activity">
-
-  <select class="form-control" name="neighborhood">
-    <option value="west_village">The West Village</option>
-    <option value="lower_east_side">The Lower East Side</option>
-    <option value="harlem">Harlem</option>
-    <option value="upper_east_side">The Upper East Side</option>
-    <option value="upper_west_side">The Upper West Side</option>
-  </select>
-
-<h2> What activity would you like to do? </h2>
-
-
-<select class="form-control" name="activity">
-<option value="food">Food</option>
-<option value="parks">Parks</option>
-<option value="museums">Museums</option>
-
-
-
-</select>
-
-<input type="submit">
-
-</form>
-</div>
-</div>
-
-</body>
-
+    <div class="container">
+      <div class="abby-container">
+        <div class="row">
+          <h1> ABBY'S GUIDE TO NEW YORK CITY </h1>
+        </div>
+        <div class="row">
+          <h3> Where are you? </h3>
+        </div>
+        <div class="row">
+          <form method="POST" action="/activity">
+            <select class="dropdown-menus form-control" name="neighborhood">
+              <option value="neighborhood">Neighborhood</option>
+              <option value="west_village">The West Village</option>
+              <option value="lower_east_side">The Lower East Side</option>
+              <option value="harlem">Harlem</option>
+              <option value="upper_east_side">The Upper East Side</option>
+              <option value="upper_west_side">The Upper West Side</option>
+            </select>
+          </div>
+          <div class="row">
+            <h3> What activity would you like to do? </h3>
+          </div>
+          <div class="row">
+            <select class="dropdown-menus form-control" name="activity">
+              <option value="activity">Activity</option>
+              <option value="food">Food</option>
+              <option value="parks">Parks</option>
+              <option value="museums">Museums</option>
+              <option value="movies">Movie Theaters</option>
+            </select>
+          </div>
+          <div id="final-button-stuff">
+            <input class="btn btn-primary" type="submit" value="ChangeME">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

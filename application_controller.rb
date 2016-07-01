@@ -5,11 +5,11 @@ require_relative 'models/model.rb'
 class MyApp < Sinatra::Base
 
   get '/' do
-    erb :index
+    erb :trigon
   end
 
   post '/activity' do
-    @option = activity(params[:neighborhood].to_sym, params[:activity].to_sym)
+    @option = select_activity(params[:neighborhood].to_sym, params[:activity].to_sym)
     erb :results
   end
 end
